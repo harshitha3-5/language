@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Bars</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Common Styles */
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    /* Vertical Nav */
+    .vertical-nav {
+      width: 150px;
+      border: 1px solid #ccc;
+      background-color: lightblue;
+    }
+
+    .vertical-nav a {
+      color: blue;
+      text-align: left;
+    }
+
+    .vertical-nav a.active {
+      background-color: orange;
+      color: white;
+    }
+
+    /* Horizontal Nav */
+    .horizontal-nav {
+      display: flex;
+      border: 1px solid #ccc;
+      background-color: #ddd;
+    }
+
+    .horizontal-nav a {
+      color: blue;
+      border-left: 1px solid blue;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .horizontal-nav a:first-child {
+      border-left: none;
+    }
+
+    .horizontal-nav a.active {
+      background-color: gray;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Vertical Navigation Bar -->
+  <div>
+    <h4>Vertical Navigation Bar</h4>
+    <div class="vertical-nav">
+      <a class="active" href="#">Home</a>
+      <a href="#">Java</a>
+      <a href="#">CSS</a>
+      <a href="#">HTML</a>
+      <a href="#">Bootstrap</a>
+    </div>
+  </div>
+
+  <!-- Horizontal Navigation Bar -->
+  <div>
+    <h4>Horizontal Navigation Bar</h4>
+    <div class="horizontal-nav">
+      <a class="active" href="#">Home</a>
+      <a href="#">Java</a>
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+    </div>
+  </div>
+</body>
+</html>
